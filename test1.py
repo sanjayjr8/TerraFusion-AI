@@ -5,8 +5,7 @@ from dotenv import load_dotenv
 import os
 import re
 
-# Load environment variables
-load_dotenv()
+
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])  
 
 # Gemini API Configuration
