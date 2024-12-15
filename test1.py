@@ -5,7 +5,7 @@ import google.generativeai as genai
 import re
 
 
-genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])  
+genai.configure(api_key=st.secrets["api_key"]["GOOGLE_API_KEY"])
 
 # Gemini API Configuration
 generation_config = {
