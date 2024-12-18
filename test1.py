@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 import re
 from streamlit_option_menu import option_menu
-from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie
 import requests
 import json
 
