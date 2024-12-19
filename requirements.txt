@@ -3,3 +3,6 @@ google-generativeai
 python-dotenv
 pillow
 gunicorn
+import os
+pip install streamlit_option_menu
+
