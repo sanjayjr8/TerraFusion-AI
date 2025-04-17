@@ -30,6 +30,8 @@ model = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
     generation_config=generation_config,
     safety_settings=safety_settings,
+    transport="rest",  # Add this
+    timeout=180  # Add this (in seconds)
 )
 
 # Helper Functions
