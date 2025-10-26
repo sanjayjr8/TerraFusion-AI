@@ -1,0 +1,8 @@
+# Environment variables
+.env
+
+# Python virtual environment
+venv/
+
+# Temporary files
+temp_*

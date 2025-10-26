@@ -27,11 +27,11 @@ safety_settings = [
 ]
 
 model = genai.GenerativeModel(
-    model_name="gemini-1.5-flash",
+    model_name="gemini-2.0-flash",  # <-- IMPORTANT: Change to this model
     generation_config=generation_config,
-    safety_settings=safety_settings,
-    transport="rest",  # Add this
-    timeout=180  # Add this (in seconds)
+    safety_settings=safety_settings
+    # DELETE the transport="rest" line
+    # DELETE the timeout=180 line
 )
 
 # Helper Functions
@@ -309,3 +309,5 @@ else:
             st.markdown(f"<p style='white-space: pre-line;'>{recommendations}</p>", unsafe_allow_html=True)
             st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown("---")
+st.markdown("<p style='text-align: center; color: #888888;'>Built by Sanjay J</p>", unsafe_allow_html=True)

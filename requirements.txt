@@ -1,7 +1,12 @@
 flask
+
+
+
+gunicorn
+
+streamlit
 google-generativeai
 python-dotenv
 pillow
-gunicorn
 streamlit_option_menu
-
+requests
